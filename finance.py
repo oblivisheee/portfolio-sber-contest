@@ -91,7 +91,6 @@ class ChooseFunc:
             print("Welcome to the portfolio manager!")
             portfolio_value = portfolio.calculate_portfolio_value()
             print(f"Your current portfolio value: {portfolio_value}")
-            # Check if there is a portfolio file
             if os.path.exists('portfolio.json') and os.path.getsize('portfolio.json') > 0:
                 print("\n----------------------------------------------------\n")
                 # Display information about the quantity and value of each asset
