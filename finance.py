@@ -93,7 +93,6 @@ class ChooseFunc:
             print(f"Your current portfolio value: {portfolio_value}")
             if os.path.exists('portfolio.json') and os.path.getsize('portfolio.json') > 0:
                 print("\n----------------------------------------------------\n")
-                # Display information about the quantity and value of each asset
                 for asset, quantity in portfolio.assets.items():
                     print(f"Your current quantity of {asset.name}: {quantity}.", f"In Rubles: {asset.value * quantity}")
                 print("\n----------------------------------------------------\n")
